@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>SkyView</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-bar">
+                <input type="text" name="input-box" id="input-box" placeholder="Enter Your Location">
+                <button class="search-btn">Go</button>
+            </div>
+        </div>
+        <div class="location-not-found">
+            <p>Oops ! Location Not Found</p>
+            <img src="./images/404.png" alt="404 Error">
+        </div>
+        <div class="weather-body">
+            <img src="./images/cloud.png" alt="Weather Image" class="weather-image">
+            <div class="weather-description">
+                <p class="temperature">0 <sup>°C</sup></p>
+                <p class="description">Light Rain</p>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <span class="material-symbols-outlined">humidity_mid</span>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="windspeed">
+                    <span class="material-symbols-outlined">airwave</span>
+                    <div class="text">
+                        <span id="windspeed">45km/hr</span>
+                        <p>Windspeed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
